@@ -26,7 +26,7 @@ Moving forward, I recommend utilizing the VAR model in real-life scenarios for f
 
 #### Outline of project
 
-- [Link to notebook 1](https://github.com/flonotter/SBB/blob/main/SBB.ipynb)
+- [Link to notebook](https://github.com/flonotter/SBB/blob/main/SBB.ipynb)
 
 
 ##### Contact and Further Information
