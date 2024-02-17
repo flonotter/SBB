@@ -1,7 +1,7 @@
 ### Project Title
 Prediction of Sales for GA and HTA
 
-Florian NOtter
+Florian Notter
 
 #### Executive summary
 In my project, I focused on preprocessing and conducting exploratory data analysis (EDA) on a publicly available dataset. Throughout the EDA phase, I employed various visualizations to gain a deeper understanding of the dataset at hand. I experimented with several predictive models, including Linear Regression, Random Forest, XGB Regressor, and finally, the VAR model. The VAR model emerged as the most effective in predicting future sales, demonstrating its superiority through its results. Utilizing the VAR model, I was able to forecast the number of tickets that would be sold in the upcoming years across different districts, with a special focus on plotting the results for a specific district as an example.
@@ -27,9 +27,7 @@ Moving forward, I recommend utilizing the VAR model in real-life scenarios for f
 
 #### Outline of project
 
-- [Link to notebook 1]()
-- [Link to notebook 2]()
-- [Link to notebook 3]()
+- [[Link to notebook 1](https://github.com/flonotter/SBB/blob/main/SBB.ipynb)]()
 
 
 ##### Contact and Further Information
