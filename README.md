@@ -1,5 +1,4 @@
-### Project Title
-Prediction of Sales for GA and HTA
+### Prediction of Sales for GA and HTA travelcards
 
 Florian Notter
 
