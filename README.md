@@ -19,10 +19,64 @@ My dataset included six columns namely ‘Jahr_An_anno’ which is the year, ‘
 
 
 #### Methodology
-My approach involved using four different prediction models, evaluating their performance with two key metrics: Mean Square Error (MSE) and Mean Absolute Error (MAE). This comprehensive evaluation allowed me to identify the most accurate model for the specific forecasting needs.
+Data was split into training and testing dataset, 20% of the data was used for testing to avoid overfitting of the models.
+My approach involved using four different prediction models: Linear Regression, Random Forest Regreswsor, XGBRegressor and VAR. Ther performance were evaluated with two key metrics: Mean Square Error (MSE) and Mean Absolute Error (MAE). These two metrics are one of the best indicators of how well the regression model is performing. For the VAR model which performed the best out of our four options I also experimented with different orders, I tried orders 1 to 5. This comprehensive evaluation allowed me to identify the most accurate model for the specific forecasting needs.
 
 #### Results
-My findings were encouraging, indicating that predicting the number of tickets sold is a feasible task with relatively low error rates. This suggests that the models I developed can provide reliable forecasts for future sales.
+During the data analysis I found that for the GA Travelcards the number of sales increased each year until 2020, and after pandemic the trend is going up again. For the Half Fare the number of sales kept increasing even during COVID, so I can expect even higher number in following years.
+The highest correlation in our dataset was between the number of sales of GA Travelcards and half-fare tickets, the correlation was 0.9. That would mean that if a number of sold GA Travelcards in a specific district is high, subsequently also number of sold half-fare tickets would be high, and if the number of sold GA Travelcards was low the same thing would also apply to half-fare tickets in a specific year.
+
+Performance of the models during cross validation is listed below:
+Linear Regression on GA Travelcards:
+Mean Absolute Error (MAE): 131.02
+Root Mean Squared Error (MSE): 75395.76
+
+Random Forest on GA Travelcards:
+Mean Absolute Error (MAE): 127.6
+Root Mean Squared Error (MSE): 74969.3
+
+XGB on GA Travelcards:
+Mean Absolute Error (MAE): 127.56
+Root Mean Squared Error (MSE): 74960.67
+
+Linear Regression on GA Travelcards:
+Mean Absolute Error (MAE): 692.87
+Root Mean Squared Error (MSE): 1788768.17
+
+Random Forest on GA Travelcards:
+Mean Absolute Error (MAE): 673.86
+Root Mean Squared Error (MSE): 1779322.44
+
+XGB on GA Travelcards:
+Mean Absolute Error (MAE): 673.61
+Root Mean Squared Error (MSE): 1779025.67
+
+VAR model evaluation:
+Order: 1
+GA Travelcards - VAR MAE: 18.92, MSE: 54.96
+Half Fare Travelcards - VAR MAE: 29.03, MSE: 70.92
+-----------------------------------------------------------
+Order: 2
+GA Travelcards - VAR MAE: 50.48, MSE: 200.51
+Half Fare Travelcards - VAR MAE: 93.69, MSE: 319.64
+-----------------------------------------------------------
+Order: 3
+GA Travelcards - VAR MAE: 231.41 MSE: 2464.07
+Half Fare Travelcards - VAR MAE: 834.26, MSE: 14125.43
+-----------------------------------------------------------
+Order: 4
+GA Travelcards - VAR MAE: 29.43, MSE: 93.896
+Half Fare Travelcards - VAR MAE: 76.66, MSE: 233.87
+-----------------------------------------------------------
+Order: 5
+GA Travelcards - VAR MAE: 18.20, MSE: 49.054
+Half Fare Travelcards - VAR MAE: 48.47, MSE: 155.17
+-----------------------------------------------------------
+
+The best performing model for predicting number of sold GA travelcards was VAR model with order 5, while for predicting number of sales for half fare travelcards the best preforming model was also VAR model, but with order 1. 
+
+My findings were encouraging, indicating that predicting the number of tickets sold is a feasible task with relatively low error rates. This suggests that the models I developed can provide reliable forecasts for future sales. I can possibly experience even better performance of the model in the future, since the year of pandemic was rather unpredictable, and the situation is much more stable nowadays.
+
 
 #### Next steps
 Moving forward, I recommend utilizing the VAR model in real-life scenarios for financial forecasting of upcoming seasons. Additionally, there's potential for further improvement by incorporating pricing data into the dataset. This would allow for more nuanced predictions that could inform ticket pricing strategies, enhancing the SBB's ability to meet financial goals and adapt to changing market conditions.
