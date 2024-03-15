@@ -27,6 +27,33 @@ During the data analysis I found that for the GA Travelcards the number of sales
 The highest correlation in our dataset was between the number of sales of GA Travelcards and half-fare tickets, the correlation was 0.9. That would mean that if a number of sold GA Travelcards in a specific district is high, subsequently also number of sold half-fare tickets would be high, and if the number of sold GA Travelcards was low the same thing would also apply to half-fare tickets in a specific year.
 
 Performance of the models during cross validation is listed below:
+
+Linear Regression on GA Travelcards:
+Mean Absolute Error (MAE): 131.69
+Root Mean Squared Error (MSE): 78070.64
+
+Random Forest on GA Travelcards:
+Mean Absolute Error (MAE): 127.87
+Root Mean Squared Error (MSE): 77657.28
+
+XGB on GA Travelcards:
+Mean Absolute Error (MAE): 127.96
+Root Mean Squared Error (MSE): 77716.73
+
+Linear Regression on Half Fare Travelcards:
+Mean Absolute Error (MAE): 705.59
+Root Mean Squared Error (MSE): 1830343.93
+
+Random Forest on Half Fare Travelcards:
+Mean Absolute Error (MAE): 684.82
+Root Mean Squared Error (MSE): 1819222.06
+
+XGB on GA Travelcards:
+Mean Absolute Error (MAE): 685.4
+Root Mean Squared Error (MSE): 1819871.25
+
+--------------------------------------------------------------
+Cross validation results:
 Linear Regression on GA Travelcards:
 Mean Absolute Error (MAE): 131.02
 Root Mean Squared Error (MSE): 75395.76
@@ -51,27 +78,25 @@ XGB on GA Travelcards:
 Mean Absolute Error (MAE): 673.61
 Root Mean Squared Error (MSE): 1779025.67
 
-VAR model evaluation:
 Order: 1
-GA Travelcards - VAR MAE: 18.92, MSE: 54.96
-Half Fare Travelcards - VAR MAE: 29.03, MSE: 70.92
------------------------------------------------------------
+GA Travelcards - VAR MAE: 18.92, MSE: 54.97
+Half Fare Travelcards - VAR MAE: 29.03, MSE: 70.93
+
 Order: 2
-GA Travelcards - VAR MAE: 50.48, MSE: 200.51
-Half Fare Travelcards - VAR MAE: 93.69, MSE: 319.64
------------------------------------------------------------
+GA Travelcards - VAR MAE: 50.48, MSE: 200.52
+Half Fare Travelcards - VAR MAE: 93.69, MSE: 319.65
+
 Order: 3
-GA Travelcards - VAR MAE: 231.41 MSE: 2464.07
-Half Fare Travelcards - VAR MAE: 834.26, MSE: 14125.43
------------------------------------------------------------
+GA Travelcards - VAR MAE: 231.41, MSE: 2464.08
+Half Fare Travelcards - VAR MAE: 834.27, MSE: 14125.43
+
 Order: 4
-GA Travelcards - VAR MAE: 29.43, MSE: 93.896
-Half Fare Travelcards - VAR MAE: 76.66, MSE: 233.87
------------------------------------------------------------
+GA Travelcards - VAR MAE: 29.43, MSE: 93.9
+Half Fare Travelcards - VAR MAE: 76.66, MSE: 233.88
+
 Order: 5
-GA Travelcards - VAR MAE: 18.20, MSE: 49.054
-Half Fare Travelcards - VAR MAE: 48.47, MSE: 155.17
------------------------------------------------------------
+GA Travelcards - VAR MAE: 18.21, MSE: 49.05
+Half Fare Travelcards - VAR MAE: 48.48, MSE: 155.17
 
 The best performing model for predicting number of sold GA travelcards was VAR model with order 5, while for predicting number of sales for half fare travelcards the best preforming model was also VAR model, but with order 1. 
 
@@ -88,3 +113,5 @@ Moving forward, I recommend utilizing the VAR model in real-life scenarios for f
 
 ##### Contact and Further Information
 flo.notter@gmail.com
+
+
