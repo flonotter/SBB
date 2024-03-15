@@ -15,6 +15,9 @@ The core question I sought to answer through this project was whether it's possi
 To tackle this research question, I relied on a publicly available dataset that detailed past sales of GA and HTA, providing a solid foundation for my predictive models.
 https://opendata.swiss/en/dataset/ga-hta-liste
 
+My dataset included six columns namely ‘Jahr_An_anno’ which is the year, ‘PLZ_NPA’ which is the district number, ‘GA_AG’ which is the number of GA ticket sales, ‘GA_AG_flag’ is an indicator if district has fewer than 20 travelcards, ‘HTA_ADT_meta-prezzo’ which is the number of half fare sales, ‘HTA_ADT_meta-prezzo_flag’ is an indicator if district has fewer than 20 half fare travelcards. The dataset consists of 35,035 rows, ranging from year 2012 to 2022, across 3194 districts. The average number of sold GA tickets per district in our dataset is 141.5, and the average number of sold half fare tickets per district in our dataset is 787.5, with maximum number of sold GA tickets in one year in specific district being 4,984, for half fare this number was 20,330.
+
+
 #### Methodology
 My approach involved using four different prediction models, evaluating their performance with two key metrics: Mean Square Error (MSE) and Mean Absolute Error (MAE). This comprehensive evaluation allowed me to identify the most accurate model for the specific forecasting needs.
 
