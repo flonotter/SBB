@@ -28,75 +28,75 @@ The highest correlation in our dataset was between the number of sales of GA Tra
 
 Performance of the models during cross validation is listed below:
 
-Linear Regression on GA Travelcards:
-Mean Absolute Error (MAE): 131.69
-Root Mean Squared Error (MSE): 78070.64
-
-Random Forest on GA Travelcards:
-Mean Absolute Error (MAE): 127.87
-Root Mean Squared Error (MSE): 77657.28
-
-XGB on GA Travelcards:
-Mean Absolute Error (MAE): 127.96
-Root Mean Squared Error (MSE): 77716.73
-
-Linear Regression on Half Fare Travelcards:
-Mean Absolute Error (MAE): 705.59
-Root Mean Squared Error (MSE): 1830343.93
-
-Random Forest on Half Fare Travelcards:
-Mean Absolute Error (MAE): 684.82
-Root Mean Squared Error (MSE): 1819222.06
-
-XGB on GA Travelcards:
-Mean Absolute Error (MAE): 685.4
-Root Mean Squared Error (MSE): 1819871.25
-
---------------------------------------------------------------
-Cross validation results:
-Linear Regression on GA Travelcards:
-Mean Absolute Error (MAE): 131.02
-Root Mean Squared Error (MSE): 75395.76
-
-Random Forest on GA Travelcards:
-Mean Absolute Error (MAE): 127.6
-Root Mean Squared Error (MSE): 74969.3
-
-XGB on GA Travelcards:
-Mean Absolute Error (MAE): 127.56
-Root Mean Squared Error (MSE): 74960.67
-
-Linear Regression on GA Travelcards:
-Mean Absolute Error (MAE): 692.87
-Root Mean Squared Error (MSE): 1788768.17
-
-Random Forest on GA Travelcards:
-Mean Absolute Error (MAE): 673.86
-Root Mean Squared Error (MSE): 1779322.44
-
-XGB on GA Travelcards:
-Mean Absolute Error (MAE): 673.61
-Root Mean Squared Error (MSE): 1779025.67
-
-Order: 1
-GA Travelcards - VAR MAE: 18.92, MSE: 54.97
-Half Fare Travelcards - VAR MAE: 29.03, MSE: 70.93
-
-Order: 2
-GA Travelcards - VAR MAE: 50.48, MSE: 200.52
-Half Fare Travelcards - VAR MAE: 93.69, MSE: 319.65
-
-Order: 3
-GA Travelcards - VAR MAE: 231.41, MSE: 2464.08
-Half Fare Travelcards - VAR MAE: 834.27, MSE: 14125.43
-
-Order: 4
-GA Travelcards - VAR MAE: 29.43, MSE: 93.9
-Half Fare Travelcards - VAR MAE: 76.66, MSE: 233.88
-
-Order: 5
-GA Travelcards - VAR MAE: 18.21, MSE: 49.05
-Half Fare Travelcards - VAR MAE: 48.48, MSE: 155.17
+                Linear Regression on GA Travelcards:
+                Mean Absolute Error (MAE): 131.69
+                Root Mean Squared Error (MSE): 78070.64
+                
+                Random Forest on GA Travelcards:
+                Mean Absolute Error (MAE): 127.87
+                Root Mean Squared Error (MSE): 77657.28
+                
+                XGB on GA Travelcards:
+                Mean Absolute Error (MAE): 127.96
+                Root Mean Squared Error (MSE): 77716.73
+                
+                Linear Regression on Half Fare Travelcards:
+                Mean Absolute Error (MAE): 705.59
+                Root Mean Squared Error (MSE): 1830343.93
+                
+                Random Forest on Half Fare Travelcards:
+                Mean Absolute Error (MAE): 684.82
+                Root Mean Squared Error (MSE): 1819222.06
+                
+                XGB on GA Travelcards:
+                Mean Absolute Error (MAE): 685.4
+                Root Mean Squared Error (MSE): 1819871.25
+                
+                --------------------------------------------------------------
+                Cross validation results:
+                Linear Regression on GA Travelcards:
+                Mean Absolute Error (MAE): 131.02
+                Root Mean Squared Error (MSE): 75395.76
+                
+                Random Forest on GA Travelcards:
+                Mean Absolute Error (MAE): 127.6
+                Root Mean Squared Error (MSE): 74969.3
+                
+                XGB on GA Travelcards:
+                Mean Absolute Error (MAE): 127.56
+                Root Mean Squared Error (MSE): 74960.67
+                
+                Linear Regression on GA Travelcards:
+                Mean Absolute Error (MAE): 692.87
+                Root Mean Squared Error (MSE): 1788768.17
+                
+                Random Forest on GA Travelcards:
+                Mean Absolute Error (MAE): 673.86
+                Root Mean Squared Error (MSE): 1779322.44
+                
+                XGB on GA Travelcards:
+                Mean Absolute Error (MAE): 673.61
+                Root Mean Squared Error (MSE): 1779025.67
+                
+                Order: 1
+                GA Travelcards - VAR MAE: 18.92, MSE: 54.97
+                Half Fare Travelcards - VAR MAE: 29.03, MSE: 70.93
+                
+                Order: 2
+                GA Travelcards - VAR MAE: 50.48, MSE: 200.52
+                Half Fare Travelcards - VAR MAE: 93.69, MSE: 319.65
+                
+                Order: 3
+                GA Travelcards - VAR MAE: 231.41, MSE: 2464.08
+                Half Fare Travelcards - VAR MAE: 834.27, MSE: 14125.43
+                
+                Order: 4
+                GA Travelcards - VAR MAE: 29.43, MSE: 93.9
+                Half Fare Travelcards - VAR MAE: 76.66, MSE: 233.88
+                
+                Order: 5
+                GA Travelcards - VAR MAE: 18.21, MSE: 49.05
+                Half Fare Travelcards - VAR MAE: 48.48, MSE: 155.17
 
 The best performing model for predicting number of sold GA travelcards was VAR model with order 5, while for predicting number of sales for half fare travelcards the best preforming model was also VAR model, but with order 1. 
 
